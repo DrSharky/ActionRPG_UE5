@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class ActionRPGTarget : TargetRules
+public class VampRPGTarget : TargetRules
 {
-	public ActionRPGTarget(TargetInfo Target)
+	public VampRPGTarget(TargetInfo Target)
 		: base(Target)
 	{
 		Type = TargetType.Game;
-		ExtraModuleNames.AddRange(new string[] { "ActionRPG" });
+		ExtraModuleNames.AddRange(new string[] { "VampRPG" });
 
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 	}

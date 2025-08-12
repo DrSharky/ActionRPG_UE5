@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "GameFramework/Character.h"
 #include "UObject/ScriptInterface.h"
 #include "RPGInventoryInterface.h"
@@ -17,7 +17,7 @@ class UGameplayEffect;
 
 /** Base class for Character, Designed to be blueprinted */
 UCLASS()
-class ACTIONRPG_API ARPGCharacterBase : public ACharacter, public IAbilitySystemInterface, public IGenericTeamAgentInterface
+class VAMPRPG_API ARPGCharacterBase : public ACharacter, public IAbilitySystemInterface, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 

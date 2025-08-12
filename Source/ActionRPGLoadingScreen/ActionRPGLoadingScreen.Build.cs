@@ -4,16 +4,16 @@ using UnrealBuildTool;
 
 // This module must be loaded "PreLoadingScreen" in the .uproject file, otherwise it will not hook in time!
 
-public class ActionRPGLoadingScreen : ModuleRules
+public class VampRPGLoadingScreen : ModuleRules
 {
-	public ActionRPGLoadingScreen(ReadOnlyTargetRules Target)
+	public VampRPGLoadingScreen(ReadOnlyTargetRules Target)
 		: base(Target)
 	{
-		PrivatePCHHeaderFile = "Public/ActionRPGLoadingScreen.h";
+		PrivatePCHHeaderFile = "Public/VampRPGLoadingScreen.h";
 
 		PCHUsage = PCHUsageMode.UseSharedPCHs;
 
-		PrivateIncludePaths.Add("ActionRPGLoadingScreen/Private");
+		PrivateIncludePaths.Add("VampRPGLoadingScreen/Private");
 
 		PublicDependencyModuleNames.AddRange(
 			new string[] {

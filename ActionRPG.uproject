@@ -5,12 +5,12 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "ActionRPG",
+			"Name": "VampRPG",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "ActionRPGLoadingScreen",
+			"Name": "VampRPGLoadingScreen",
 			"Type": "ClientOnly",
 			"LoadingPhase": "PreLoadingScreen"
 		}

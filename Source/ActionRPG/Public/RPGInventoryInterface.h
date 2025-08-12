@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "RPGInventoryInterface.generated.h"
 
 /**
@@ -16,7 +16,7 @@ class URPGInventoryInterface : public UInterface
 	GENERATED_BODY()
 };
 
-class ACTIONRPG_API IRPGInventoryInterface
+class VAMPRPG_API IRPGInventoryInterface
 {
 	GENERATED_BODY()
 

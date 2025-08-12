@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "Engine/AssetManager.h"
 #include "RPGAssetManager.generated.h"
 
@@ -14,7 +14,7 @@ class URPGItem;
  * This is used by setting AssetManagerClassName in DefaultEngine.ini
  */
 UCLASS()
-class ACTIONRPG_API URPGAssetManager : public UAssetManager
+class VAMPRPG_API URPGAssetManager : public UAssetManager
 {
 	GENERATED_BODY()
 

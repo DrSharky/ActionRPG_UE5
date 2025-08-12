@@ -8,7 +8,7 @@
 // This file is a good place for subclasses of FGameplayEffectContext and FGameplayAbilityTargetData
 // ----------------------------------------------------------------------------------------------------------------
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "GameplayEffectTypes.h"
 #include "Abilities/GameplayAbilityTargetTypes.h"
 #include "RPGAbilityTypes.generated.h"

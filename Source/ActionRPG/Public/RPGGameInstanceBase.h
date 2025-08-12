@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "Engine/GameInstance.h"
 #include "RPGGameInstanceBase.generated.h"
 
@@ -15,7 +15,7 @@ class URPGSaveGame;
  * Once you make a blueprint subclass of your native subclass you will want to set it to be the default in project settings
  */
 UCLASS()
-class ACTIONRPG_API URPGGameInstanceBase : public UGameInstance
+class VAMPRPG_API URPGGameInstanceBase : public UGameInstance
 {
 	GENERATED_BODY()
 

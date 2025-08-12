@@ -7,7 +7,7 @@
 
 /** Native base class for weapons, should be blueprinted */
 UCLASS()
-class ACTIONRPG_API URPGWeaponItem : public URPGItem
+class VAMPRPG_API URPGWeaponItem : public URPGItem
 {
 	GENERATED_BODY()
 

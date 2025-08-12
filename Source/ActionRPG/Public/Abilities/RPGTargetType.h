@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "Abilities/GameplayAbilityTypes.h"
 #include "Abilities/RPGAbilityTypes.h"
 #include "RPGTargetType.generated.h"
@@ -19,7 +19,7 @@ struct FGameplayEventData;
  * If your targeting is more complicated you may need to instance into the world once or as a pooled actor
  */
 UCLASS(Blueprintable, meta = (ShowWorldContextPin))
-class ACTIONRPG_API URPGTargetType : public UObject
+class VAMPRPG_API URPGTargetType : public UObject
 {
 	GENERATED_BODY()
 
@@ -34,7 +34,7 @@ public:
 
 /** Trivial target type that uses the owner */
 UCLASS(NotBlueprintable)
-class ACTIONRPG_API URPGTargetType_UseOwner : public URPGTargetType
+class VAMPRPG_API URPGTargetType_UseOwner : public URPGTargetType
 {
 	GENERATED_BODY()
 
@@ -48,7 +48,7 @@ public:
 
 /** Trivial target type that pulls the target out of the event data */
 UCLASS(NotBlueprintable)
-class ACTIONRPG_API URPGTargetType_UseEventData : public URPGTargetType
+class VAMPRPG_API URPGTargetType_UseEventData : public URPGTargetType
 {
 	GENERATED_BODY()
 

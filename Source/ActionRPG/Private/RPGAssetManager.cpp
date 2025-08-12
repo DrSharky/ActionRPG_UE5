@@ -19,7 +19,7 @@ URPGAssetManager& URPGAssetManager::Get()
 	}
 	else
 	{
-		UE_LOG(LogActionRPG, Fatal, TEXT("Invalid AssetManager in DefaultEngine.ini, must be RPGAssetManager!"));
+		UE_LOG(LogVampRPG, Fatal, TEXT("Invalid AssetManager in DefaultEngine.ini, must be RPGAssetManager!"));
 		return *NewObject<URPGAssetManager>(); // never calls this
 	}
 }
@@ -41,7 +41,7 @@ URPGItem* URPGAssetManager::ForceLoadItem(const FPrimaryAssetId& PrimaryAssetId,
 
 	if (bLogWarning && LoadedItem == nullptr)
 	{
-		UE_LOG(LogActionRPG, Warning, TEXT("Failed to load item for identifier %s!"), *PrimaryAssetId.ToString());
+		UE_LOG(LogVampRPG, Warning, TEXT("Failed to load item for identifier %s!"), *PrimaryAssetId.ToString());
 	}
 
 	return LoadedItem;

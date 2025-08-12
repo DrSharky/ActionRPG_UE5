@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "Items/RPGItem.h"
 #include "GameFramework/SaveGame.h"
 #include "RPGSaveGame.generated.h"
@@ -27,7 +27,7 @@ namespace ERPGSaveGameVersion
 
 /** Object that is written to and read from the save game archive, with a data version */
 UCLASS(BlueprintType)
-class ACTIONRPG_API URPGSaveGame : public USaveGame
+class VAMPRPG_API URPGSaveGame : public USaveGame
 {
 	GENERATED_BODY()
 

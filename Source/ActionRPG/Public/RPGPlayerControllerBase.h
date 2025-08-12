@@ -2,14 +2,14 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "GameFramework/PlayerController.h"
 #include "RPGInventoryInterface.h"
 #include "RPGPlayerControllerBase.generated.h"
 
 /** Base class for PlayerController, should be blueprinted */
 UCLASS()
-class ACTIONRPG_API ARPGPlayerControllerBase : public APlayerController, public IRPGInventoryInterface
+class VAMPRPG_API ARPGPlayerControllerBase : public APlayerController, public IRPGInventoryInterface
 {
 	GENERATED_BODY()
 

@@ -7,7 +7,7 @@
 
 /** Native base class for skills, should be blueprinted */
 UCLASS()
-class ACTIONRPG_API URPGSkillItem : public URPGItem
+class VAMPRPG_API URPGSkillItem : public URPGItem
 {
 	GENERATED_BODY()
 

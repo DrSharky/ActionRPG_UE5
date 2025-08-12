@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "Engine/DataAsset.h"
 #include "Styling/SlateBrush.h"
 #include "RPGAssetManager.h"
@@ -12,7 +12,7 @@ class URPGGameplayAbility;
 
 /** Base class for all items, do not blueprint directly */
 UCLASS(Abstract, BlueprintType)
-class ACTIONRPG_API URPGItem : public UPrimaryDataAsset
+class VAMPRPG_API URPGItem : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
 

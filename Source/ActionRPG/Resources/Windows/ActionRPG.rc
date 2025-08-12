@@ -48,9 +48,9 @@ BEGIN
             VALUE "LegalCopyright", EPIC_COPYRIGHT_STRING
             VALUE "ProductName", EPIC_PRODUCT_NAME
 			VALUE "ProductVersion", ENGINE_VERSION_STRING
-			VALUE "FileDescription", "ActionRPG"
-            VALUE "InternalName", "ActionRPG"
-            VALUE "OriginalFilename", "ActionRPG.exe"
+			VALUE "FileDescription", "VampRPG"
+            VALUE "InternalName", "VampRPG"
+            VALUE "OriginalFilename", "VampRPG.exe"
         END
     END
     BLOCK "VarFileInfo"

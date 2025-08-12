@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "Abilities/GameplayAbility.h"
 #include "Abilities/RPGAbilityTypes.h"
 #include "RPGGameplayAbility.generated.h"
@@ -13,7 +13,7 @@
  * Most games will need to implement a subclass to support their game-specific code
  */
 UCLASS()
-class ACTIONRPG_API URPGGameplayAbility : public UGameplayAbility
+class VAMPRPG_API URPGGameplayAbility : public UGameplayAbility
 {
 	GENERATED_BODY()
 

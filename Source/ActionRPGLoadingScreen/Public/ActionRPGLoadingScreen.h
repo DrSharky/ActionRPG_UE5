@@ -6,13 +6,13 @@
 #include "Modules/ModuleManager.h"
 
 /** Module interface for this game's loading screens */
-class IActionRPGLoadingScreenModule : public IModuleInterface
+class IVampRPGLoadingScreenModule : public IModuleInterface
 {
 public:
 	/** Loads the module so it can be turned on */
-	static inline IActionRPGLoadingScreenModule& Get()
+	static inline IVampRPGLoadingScreenModule& Get()
 	{
-		return FModuleManager::LoadModuleChecked<IActionRPGLoadingScreenModule>("ActionRPGLoadingScreen");
+		return FModuleManager::LoadModuleChecked<IVampRPGLoadingScreenModule>("VampRPGLoadingScreen");
 	}
 
 	/** Kicks off the loading screen for in game loading (not startup) */

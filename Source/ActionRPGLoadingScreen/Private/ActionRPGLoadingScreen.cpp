@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "ActionRPGLoadingScreen.h"
+#include "VampRPGLoadingScreen.h"
 #include "SlateBasics.h"
 #include "SlateExtras.h"
 #include "MoviePlayer.h"
@@ -35,7 +35,7 @@ public:
 	void Construct(const FArguments& InArgs)
 	{
 		// Load version of the logo with text baked in, path is hardcoded because this loads very early in startup
-		static const FName LoadingScreenName(TEXT("/Game/UI/T_ActionRPG_TransparentLogo.T_ActionRPG_TransparentLogo"));
+		static const FName LoadingScreenName(TEXT("/Game/UI/T_VampRPG_TransparentLogo.T_VampRPG_TransparentLogo"));
 
 		LoadingScreenBrush = MakeShareable(new FRPGLoadingScreenBrush(LoadingScreenName, FVector2D(1024, 256)));
 		
@@ -88,13 +88,13 @@ private:
 	TSharedPtr<FSlateDynamicImageBrush> LoadingScreenBrush;
 };
 
-class FActionRPGLoadingScreenModule : public IActionRPGLoadingScreenModule
+class FVampRPGLoadingScreenModule : public IVampRPGLoadingScreenModule
 {
 public:
 	virtual void StartupModule() override
 	{
 		// Force load for cooker reference
-		LoadObject<UObject>(nullptr, TEXT("/Game/UI/T_ActionRPG_TransparentLogo.T_ActionRPG_TransparentLogo") );
+		LoadObject<UObject>(nullptr, TEXT("/Game/UI/T_VampRPG_TransparentLogo.T_VampRPG_TransparentLogo") );
 
 		if (IsMoviePlayerEnabled())
 		{
@@ -134,4 +134,4 @@ public:
 
 };
 
-IMPLEMENT_GAME_MODULE(FActionRPGLoadingScreenModule, ActionRPGLoadingScreen);
+IMPLEMENT_GAME_MODULE(FVampRPGLoadingScreenModule, VampRPGLoadingScreen);

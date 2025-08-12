@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "ActionRPG.h"
+#include "VampRPG.h"
 #include "AttributeSet.h"
 #include "AbilitySystemComponent.h"
 #include "RPGAttributeSet.generated.h"
@@ -16,7 +16,7 @@
 
 /** This holds all of the attributes used by abilities, it instantiates a copy of this on every character */
 UCLASS()
-class ACTIONRPG_API URPGAttributeSet : public UAttributeSet
+class VAMPRPG_API URPGAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
 public:

@@ -2,12 +2,12 @@
 
 using UnrealBuildTool;
 
-public class ActionRPG : ModuleRules
+public class VampRPG : ModuleRules
 {
-	public ActionRPG(ReadOnlyTargetRules Target)
+	public VampRPG(ReadOnlyTargetRules Target)
 		: base(Target)
 	{
-		PrivatePCHHeaderFile = "Public/ActionRPG.h";
+		PrivatePCHHeaderFile = "Public/VampRPG.h";
 
 		PublicDependencyModuleNames.AddRange(
 			new string[] {
@@ -19,7 +19,7 @@ public class ActionRPG : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(
 			new string[] {
-				"ActionRPGLoadingScreen",
+				"VampRPGLoadingScreen",
 				"Slate",
 				"SlateCore",
 				"InputCore",
