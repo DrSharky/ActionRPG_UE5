@@ -5,12 +5,12 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "VampRPG",
+			"Name": "PunkRPG",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "VampRPGLoadingScreen",
+			"Name": "PunkRPGLoadingScreen",
 			"Type": "ClientOnly",
 			"LoadingPhase": "PreLoadingScreen"
 		}

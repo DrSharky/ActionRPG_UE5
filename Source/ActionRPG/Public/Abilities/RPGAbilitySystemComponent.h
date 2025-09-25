@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "VampRPG.h"
+#include "PunkRPG.h"
 #include "AbilitySystemComponent.h"
 #include "Abilities/RPGAbilityTypes.h"
 #include "RPGAbilitySystemComponent.generated.h"
@@ -14,7 +14,7 @@ class URPGGameplayAbility;
  * Most games will need to make a game-specific subclass to provide utility functions
  */
 UCLASS()
-class VAMPRPG_API URPGAbilitySystemComponent : public UAbilitySystemComponent
+class PUNKRPG_API URPGAbilitySystemComponent : public UAbilitySystemComponent
 {
 	GENERATED_BODY()
 

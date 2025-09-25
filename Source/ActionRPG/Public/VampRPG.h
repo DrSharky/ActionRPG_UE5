@@ -13,4 +13,4 @@
 #include "Net/UnrealNetwork.h"
 #include "RPGTypes.h"
 
-VAMPRPG_API DECLARE_LOG_CATEGORY_EXTERN(LogVampRPG, Log, All);
+PUNKRPG_API DECLARE_LOG_CATEGORY_EXTERN(LogPunkRPG, Log, All);

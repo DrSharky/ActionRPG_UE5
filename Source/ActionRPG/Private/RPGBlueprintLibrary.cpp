@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "RPGBlueprintLibrary.h"
-#include "VampRPGLoadingScreen.h"
+#include "PunkRPGLoadingScreen.h"
 
 
 URPGBlueprintLibrary::URPGBlueprintLibrary(const FObjectInitializer& ObjectInitializer)
@@ -11,13 +11,13 @@ URPGBlueprintLibrary::URPGBlueprintLibrary(const FObjectInitializer& ObjectIniti
 
 void URPGBlueprintLibrary::PlayLoadingScreen(bool bPlayUntilStopped, float PlayTime)
 {
-	IVampRPGLoadingScreenModule& LoadingScreenModule = IVampRPGLoadingScreenModule::Get();
+	IPunkRPGLoadingScreenModule& LoadingScreenModule = IPunkRPGLoadingScreenModule::Get();
 	LoadingScreenModule.StartInGameLoadingScreen(bPlayUntilStopped, PlayTime);
 }
 
 void URPGBlueprintLibrary::StopLoadingScreen()
 {
-	IVampRPGLoadingScreenModule& LoadingScreenModule = IVampRPGLoadingScreenModule::Get();
+	IPunkRPGLoadingScreenModule& LoadingScreenModule = IPunkRPGLoadingScreenModule::Get();
 	LoadingScreenModule.StopInGameLoadingScreen();
 }
 

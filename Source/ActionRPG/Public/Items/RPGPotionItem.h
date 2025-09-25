@@ -7,7 +7,7 @@
 
 /** Native base class for potions, should be blueprinted */
 UCLASS()
-class VAMPRPG_API URPGPotionItem : public URPGItem
+class PUNKRPG_API URPGPotionItem : public URPGItem
 {
 	GENERATED_BODY()
 

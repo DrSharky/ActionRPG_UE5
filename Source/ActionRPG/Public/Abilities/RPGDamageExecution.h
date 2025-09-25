@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "VampRPG.h"
+#include "PunkRPG.h"
 #include "GameplayEffectExecutionCalculation.h"
 #include "RPGDamageExecution.generated.h"
 
@@ -11,7 +11,7 @@
  * Most games will want to implement multiple game-specific executions
  */
 UCLASS()
-class VAMPRPG_API URPGDamageExecution : public UGameplayEffectExecutionCalculation
+class PUNKRPG_API URPGDamageExecution : public UGameplayEffectExecutionCalculation
 {
 	GENERATED_BODY()
 

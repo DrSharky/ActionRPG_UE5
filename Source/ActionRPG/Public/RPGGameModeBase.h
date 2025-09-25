@@ -2,13 +2,13 @@
 
 #pragma once
 
-#include "VampRPG.h"
+#include "PunkRPG.h"
 #include "GameFramework/GameModeBase.h"
 #include "RPGGameModeBase.generated.h"
 
 /** Base class for GameMode, should be blueprinted */
 UCLASS()
-class VAMPRPG_API ARPGGameModeBase : public AGameModeBase
+class PUNKRPG_API ARPGGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 
@@ -20,7 +20,7 @@ public:
 	 *	is not being called in normal circumstances. Added just to streamline 
 	 *	dev-time activities (like automated testing). The default ResetLevel 
 	 *	implementation doesn't work all that well with how things are set up in 
-	 *	VampRPG (and that's ok, this is exactly why we override functions!). 
+	 *	PunkRPG (and that's ok, this is exactly why we override functions!). 
 	 */
 	virtual void ResetLevel() override;
 

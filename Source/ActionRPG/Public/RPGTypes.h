@@ -16,7 +16,7 @@ class URPGSaveGame;
 
 /** Struct representing a slot for an item, shown in the UI */
 USTRUCT(BlueprintType)
-struct VAMPRPG_API FRPGItemSlot
+struct PUNKRPG_API FRPGItemSlot
 {
 	GENERATED_BODY()
 
@@ -68,7 +68,7 @@ struct VAMPRPG_API FRPGItemSlot
 
 /** Extra information about a URPGItem that is in a player's inventory */
 USTRUCT(BlueprintType)
-struct VAMPRPG_API FRPGItemData
+struct PUNKRPG_API FRPGItemData
 {
 	GENERATED_BODY()
 

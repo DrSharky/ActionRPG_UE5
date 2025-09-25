@@ -11,13 +11,13 @@ bool ARPGPlayerControllerBase::AddInventoryItem(URPGItem* NewItem, int32 ItemCou
 	bool bChanged = false;
 	if (!NewItem)
 	{
-		UE_LOG(LogVampRPG, Warning, TEXT("AddInventoryItem: Failed trying to add null item!"));
+		UE_LOG(LogPunkRPG, Warning, TEXT("AddInventoryItem: Failed trying to add null item!"));
 		return false;
 	}
 
 	if (ItemCount <= 0 || ItemLevel <= 0)
 	{
-		UE_LOG(LogVampRPG, Warning, TEXT("AddInventoryItem: Failed trying to add item %s with negative count or level!"), *NewItem->GetName());
+		UE_LOG(LogPunkRPG, Warning, TEXT("AddInventoryItem: Failed trying to add item %s with negative count or level!"), *NewItem->GetName());
 		return false;
 	}
 
@@ -56,7 +56,7 @@ bool ARPGPlayerControllerBase::RemoveInventoryItem(URPGItem* RemovedItem, int32 
 {
 	if (!RemovedItem)
 	{
-		UE_LOG(LogVampRPG, Warning, TEXT("RemoveInventoryItem: Failed trying to remove null item!"));
+		UE_LOG(LogPunkRPG, Warning, TEXT("RemoveInventoryItem: Failed trying to remove null item!"));
 		return false;
 	}
 

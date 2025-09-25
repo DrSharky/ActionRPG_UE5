@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class VampRPGEditorTarget : TargetRules
+public class PunkRPGEditorTarget : TargetRules
 {
-	public VampRPGEditorTarget(TargetInfo Target)
+	public PunkRPGEditorTarget(TargetInfo Target)
 		: base(Target)
 	{
 		Type = TargetType.Editor;
-		ExtraModuleNames.AddRange(new string[] { "VampRPG" });
+		ExtraModuleNames.AddRange(new string[] { "PunkRPG" });
 
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 	}

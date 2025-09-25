@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "VampRPG.h"
+#include "PunkRPG.h"
 #include "Abilities/Tasks/AbilityTask.h"
 #include "RPGAbilityTask_PlayMontageAndWaitForEvent.generated.h"
 
@@ -18,7 +18,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FRPGPlayMontageAndWaitForEventDeleg
  * It is expected that each game will have a set of game-specific tasks to do what they want
  */
 UCLASS()
-class VAMPRPG_API URPGAbilityTask_PlayMontageAndWaitForEvent : public UAbilityTask
+class PUNKRPG_API URPGAbilityTask_PlayMontageAndWaitForEvent : public UAbilityTask
 {
 	GENERATED_BODY()
 

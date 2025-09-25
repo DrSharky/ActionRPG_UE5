@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "VampRPG.h"
+#include "PunkRPG.h"
 #include "RPGTypes.h"
 #include "Abilities/RPGAbilityTypes.h"
 #include "RPGBlueprintLibrary.generated.h"

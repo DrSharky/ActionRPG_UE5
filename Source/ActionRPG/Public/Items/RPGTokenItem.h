@@ -7,7 +7,7 @@
 
 /** Native base class for tokens/currency, should be blueprinted */
 UCLASS()
-class VAMPRPG_API URPGTokenItem : public URPGItem
+class PUNKRPG_API URPGTokenItem : public URPGItem
 {
 	GENERATED_BODY()
 
