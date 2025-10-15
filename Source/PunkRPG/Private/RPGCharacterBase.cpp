@@ -16,6 +16,7 @@ ARPGCharacterBase::ARPGCharacterBase()
 
 	CharacterLevel = 1;
 	bAbilitiesInitialized = false;
+	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("InventoryComponent"));
 }
 
 UAbilitySystemComponent* ARPGCharacterBase::GetAbilitySystemComponent() const
@@ -410,6 +411,17 @@ void ARPGCharacterBase::HandleMoveSpeedChanged(float DeltaValue, const struct FG
 	if (bAbilitiesInitialized)
 	{
 		OnMoveSpeedChanged(DeltaValue, EventTags);
+	}
+}
+
+void ARPGCharacterBase::UseCurrentWeapon()
+{
+	if (InventoryComponent)
+	{
+		if (ABaseWeapon* CurrentWeapon = InventoryComponent->GetCurrentWeapon())
+		{
+			CurrentWeapon->UseWeapon();
+		}
 	}
 }
 

@@ -10,6 +10,8 @@
 #include "Abilities/RPGAbilitySystemComponent.h"
 #include "Abilities/RPGAttributeSet.h"
 #include "GenericTeamAgentInterface.h"
+#include "Inventory/InventoryComponent.h"
+#include "Weapons/MolotovWeapon.h"
 #include "RPGCharacterBase.generated.h"
 
 class URPGGameplayAbility;
@@ -28,6 +30,9 @@ public:
 	virtual void UnPossessed() override;
 	virtual void OnRep_Controller() override;
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Inventory")
+	UInventoryComponent* InventoryComponent;
 
 	// Implement IAbilitySystemInterface
 	UAbilitySystemComponent* GetAbilitySystemComponent() const override;
@@ -87,6 +92,9 @@ public:
 	/** Returns total time and remaining time for cooldown tags. Returns false if no active cooldowns found */
 	UFUNCTION(BlueprintCallable, Category = "Abilities")
 	bool GetCooldownRemainingForTag(FGameplayTagContainer CooldownTags, float& TimeRemaining, float& CooldownDuration);
+
+	UFUNCTION(BlueprintCallable, Category="Weapon")
+	void UseCurrentWeapon();
 
 protected:
 	/** The level of this character, should not be modified directly once it has already spawned */
